@@ -1,10 +1,32 @@
-INSERT INTO tb_client (name,cpf,income,birth_Date,children) VALUES ('Xander','16660218 2708',159.95,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',1)
-INSERT INTO tb_client (name,cpf,income,birth_Date,children) VALUES ('Chase','16020312 0399',142.78,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',11)
-INSERT INTO tb_client (name,cpf,income,birth_Date,children) VALUES ('Jonah','16630130 6418',199.06,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',21)
-INSERT INTO tb_client (name,cpf,income,birth_Date,children) VALUES ('Roth','16761115 4605',178.52,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',31)
-INSERT INTO tb_client (name,cpf,income,birth_Date,children) VALUES ('Ali','16871012 0059',166.75,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',41)
-INSERT INTO tb_client (name,cpf,income,birth_Date,children) VALUES ('Castor','16520906 0267',142.22,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',51)
-INSERT INTO tb_client (name,cpf,income,birth_Date,children) VALUES ('Beau','16900211 7555',113.23,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',61)
-INSERT INTO tb_client (name,cpf,income,birth_Date,children) VALUES ('Darius','16380215 7093',178.04,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',71)
-INSERT INTO tb_client (name,cpf,income,birth_Date,children) VALUES ('Wesley','16800309 8699',153.56,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',81)
-INSERT INTO tb_client (name,cpf,income,birth_Date,children) VALUES ('Lionel','16510608 0749',185.28,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',91)
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Nayda Williams','024983-0225',1714.85,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',1);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Ruby Barlow','258096-1536',1793.87,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',2);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Michelle Morrow','179354-0897', 4827.68,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',3);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Ferris Fitzpatrick','752103-6504', 2710.56,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',4);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Raven Curtis','754327-7409', 8070.84,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',5);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Reagan Hodges','643127-9378', 8247.02,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',2);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Isaac Schwartz','179771-1809', 8806.82,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',2);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Boris Kelley','475745-4287', 6796.39,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',3);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Grant Pearson','222544-5093', 2690.48,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',0);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Ulric Sharpe','995147-9113', 7877.88,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',1);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Dominic Berger','954868-6741', 4632.36,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',1);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Kuame Nelson','138324-7861', 8855.75,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',2);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Keelie Cline','263210-3079', 9082.95,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',3);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Jena Weaver','499270-5014', 6170.77,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',4);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Ila Fields','448100-3228', 8952.08,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',5);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Reece Watts','924715-2508',3087.33,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',6);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Vincent Finley','079002-1174', 6285.11,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',7);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Walter Michael','627700-9202', 9668.21,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',8);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Myra Mueller','882906-0246', 7688.59,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',9);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Beau Pugh','265657-3637', 9284.62,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',0);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Merrill Bowen','288940-4477', 1213.01,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',1);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Ainsley Key','539880-4822', 3111.13,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',2);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Stacy Davidson','137354-5423', 4188.85,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',3);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Sylvia Norman','023471-5373', 2645.48,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',4);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Brennan Bates','667811-4262', 8186.69,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',5);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Zeph Hughes','042580-7880',3032.21,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',6);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Fulton Emerson','349138-3489', 5454.95,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',7);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Nicholas Gallegos','123744-4169', 4631.99,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',8);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Arsenio Thompson','499103-5470', 2173.79,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',2);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('William Nunez','887778-7740', 4194.97,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',0);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('Gage Carey','884288-0281', 1969.63,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',1);
+INSERT INTO tb_client (`name`,`cpf`,`income`,`birth_Date`,`children`) VALUES ('William Bradley','625037-3344', 1185.00,TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z',3);
