@@ -1,5 +1,7 @@
 package com.dvsuperior.dscrudclient.services;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -20,6 +22,12 @@ public class ClientService {
 		
 		Page<Client> list = repository.findAll(pageRequest);
 		return list;
+	}
+
+	@Transactional(readOnly = true)
+	public Optional<Client> findById(Long id) {
+		Optional<Client> client = repository.findById(id);
+		return client;
 	}
 	
 }
