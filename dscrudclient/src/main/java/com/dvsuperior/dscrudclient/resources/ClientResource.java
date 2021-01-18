@@ -20,9 +20,8 @@ public class ClientResource {
 	private ClientService service;
 
 	@GetMapping
-	public ResponseEntity<Client> findAll(){
-		
-		List<Client> client = service.findAll();
-		return ResponseEntity.of(null).body(client);
+	public ResponseEntity<List<Client>> findAll(){
+		List<Client> list = service.findAll();
+		return ResponseEntity.ok().body(list);
 	}
 }

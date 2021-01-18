@@ -21,13 +21,9 @@ public class Client implements Serializable {
 	private String name;
 	private String cpf;
 	private Double income;
-	private Instant birthDate;
+	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+	private Instant birth_Date;
 	private Integer children;
-	
-	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-	private Instant createdAt;
-	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-	private Instant updatedAt;
 	
 	public Client() {
 	}
@@ -37,7 +33,7 @@ public class Client implements Serializable {
 		this.name = name;
 		this.cpf = cpf;
 		this.income = income;
-		this.birthDate = birthDate;
+		this.birth_Date = birthDate;
 		this.children = children;
 	}
 
@@ -74,11 +70,11 @@ public class Client implements Serializable {
 	}
 
 	public Instant getBirthDate() {
-		return birthDate;
+		return birth_Date;
 	}
 
 	public void setBirthDate(Instant birthDate) {
-		this.birthDate = birthDate;
+		this.birth_Date = birthDate;
 	}
 
 	public Integer getChildren() {
@@ -89,22 +85,6 @@ public class Client implements Serializable {
 		this.children = children;
 	}
 	
-	public Instant getCreatedAt() {
-		return createdAt;
-	}
-
-	public void setCreatedAt(Instant createdAt) {
-		this.createdAt = createdAt;
-	}
-
-	public Instant getUpdatedAt() {
-		return updatedAt;
-	}
-
-	public void setUpdatedAt(Instant updatedAt) {
-		this.updatedAt = updatedAt;
-	}
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
