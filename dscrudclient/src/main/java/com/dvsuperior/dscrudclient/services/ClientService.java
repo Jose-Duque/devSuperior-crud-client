@@ -8,8 +8,10 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.dvsuperior.dscrudclient.dto.ClientDTO;
 import com.dvsuperior.dscrudclient.entities.Client;
 import com.dvsuperior.dscrudclient.repositories.ClientRepository;
+import com.dvsuperior.dscrudclient.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class ClientService {
@@ -18,16 +20,17 @@ public class ClientService {
 	private ClientRepository repository;
 	
 	@Transactional(readOnly = true)
-	public Page<Client> findAllPage(PageRequest pageRequest) {
+	public Page<ClientDTO> findAllPage(PageRequest pageRequest) {
 		
 		Page<Client> list = repository.findAll(pageRequest);
-		return list;
+		return list.map(x -> new ClientDTO(x)) ;
 	}
 
 	@Transactional(readOnly = true)
-	public Optional<Client> findById(Long id) {
-		Optional<Client> client = repository.findById(id);
-		return client;
+	public ClientDTO findById(Long id) {
+		Optional<Client> obj = repository.findById(id);
+		Client entity = obj.orElseThrow(() -> new ResourceNotFoundException("Entidade não encontrada"));
+		return new ClientDTO(entity);
 	}
 	
 }

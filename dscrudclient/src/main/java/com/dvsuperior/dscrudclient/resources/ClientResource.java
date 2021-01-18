@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.dvsuperior.dscrudclient.dto.ClientDTO;
 import com.dvsuperior.dscrudclient.entities.Client;
 import com.dvsuperior.dscrudclient.services.ClientService;
 
@@ -26,20 +27,20 @@ public class ClientResource {
 	private ClientService service;
 
 	@GetMapping
-	public ResponseEntity<Page<Client>> findAll(
+	public ResponseEntity<Page<ClientDTO>> findAll(
 			@RequestParam(value = "page", defaultValue = "0") Integer page,
 			@RequestParam(value = "linesPerPage", defaultValue = "12") Integer linesPerPage,
 			@RequestParam(value = "direction", defaultValue = "ASC") String direction,
 			@RequestParam(value = "orderBy", defaultValue = "name") String orderBy){
 		
 		PageRequest pageRequest = PageRequest.of(page, linesPerPage, Direction.valueOf(direction), orderBy);
-		Page<Client> list = service.findAllPage(pageRequest);
+		Page<ClientDTO> list = service.findAllPage(pageRequest);
 		return ResponseEntity.ok().body(list);
 	}
 	
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<Optional<Client>> findById(@PathVariable Long id){
-		Optional<Client> client = service.findById(id);
-		return ResponseEntity.ok().body(client);
+	public ResponseEntity<ClientDTO> findById(@PathVariable Long id){
+		ClientDTO clientDTO = service.findById(id);
+		return ResponseEntity.ok().body(clientDTO);
 	}
 }
