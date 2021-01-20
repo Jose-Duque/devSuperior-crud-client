@@ -2,6 +2,8 @@ package com.dvsuperior.dscrudclient.services;
 
 import java.util.Optional;
 
+import javax.persistence.EntityNotFoundException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -41,12 +43,26 @@ public class ClientService {
 		return new ClientDTO(entity);
 	}
 	
+	@Transactional
+	public ClientDTO update(Long id, ClientDTO dto) {
+		try {
+		Client entity = repository.getOne(id);
+		copyToEntity(dto, entity);
+		entity = repository.save(entity);
+		return new ClientDTO(entity);
+		}
+		catch (EntityNotFoundException e) {
+			throw new ResourceNotFoundException("Id not found " + id);
+		}
+	}
+
 	private void copyToEntity(ClientDTO dto, Client entity) {
-		entity.setBirthDate(dto.getBirth_Date());
+		entity.setBirthDate(dto.getbirthDate());
 		entity.setChildren(dto.getChildren());
 		entity.setCpf(dto.getCpf());
 		entity.setIncome(dto.getIncome());
 		entity.setName(dto.getName());
 	}
+
 }
 		
